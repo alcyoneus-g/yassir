@@ -11,10 +11,10 @@ import reportWebVitals from './reportWebVitals';
 import './index.css';
 import theme from './theme';
 
-if (process.env.NODE_ENV === 'development') {
+// if (process.env.NODE_ENV === 'development') {
   const { worker } = require('./mocks/browser')
   worker.start()
-}
+// }
 
 const container = document.getElementById('root')!;
 const root = createRoot(container);
